@@ -121,10 +121,10 @@ sudo systemctl enable mongod
 ```
 
 - ssh into the app and use `cd app`
-- Then create an environement variable using: `DB_HOST=mongodb://192.168.10.150:27017/posts`
+- Then create an environement variable using: `DB_HOST=mongodb://[DB IP]:[DB PORT]/posts`
 - After that, you need to seed the database. Use the command `cd seeds` and then run `node seed.js`
 - cd back into the app directory, then run `npm start` to restart the app.js
-- Finally, on a brower enter the URL: `/192.168.10.100:27017/posts` to load up the posts page
+- Finally, on a brower enter the URL: `/[public IP]:27017/posts` to load up the posts page
 
 ## Additional info
 To make the environment variable persistant:
